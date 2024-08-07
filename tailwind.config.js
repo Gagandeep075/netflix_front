@@ -1,11 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./src/**/*.{html,js,jsx,ts,tsx}", "./public/index.html"],
   theme: {
     extend: {},
-  },
-  plugins: [],
-  theme: {
     screens: {
       'sm': '300px',
       // => @media (min-width: 340px) { ... }
@@ -22,6 +19,6 @@ module.exports = {
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
     }
-  }
-}
-
+  },
+  plugins: [],
+};
