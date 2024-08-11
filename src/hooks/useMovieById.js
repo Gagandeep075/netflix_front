@@ -10,7 +10,7 @@ const useMovieById = async (movieId) => {
   useEffect(() => {
    const getMovieById = async () => {
     try {
-      const res = await axios.get(`http://api.themoviedb.org/3/movie/${movieId}/videos`, options);
+      const res = await axios.get(`https://api.themoviedb.org/3/movie/${movieId}/videos`, options);
 
       console.log(res.data.results);
       const trailer = res?.data.results?.filter((item) => {
